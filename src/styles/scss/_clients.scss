@@ -1,0 +1,151 @@
+.clients {
+  &__heading {
+    margin: 165px 0 19px 200px;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 32px;
+    width: 362px;
+    line-height: 1.4;
+    color: #253757;
+    margin: 0 0 86px 165px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 314px;
+    height: 464px;
+    box-sizing: border-box;
+    padding: 58px 32px;
+    background-color: #fefefe;
+    box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    transition: 1s;
+
+    &:nth-child(1) {
+      .clients__oval__block {
+        background-color: #56ccf2;
+      }
+
+      .clients__item__position {
+        color: #56ccf2;
+      }
+    }
+
+    &:nth-child(2) {
+      .clients__oval__block {
+        background-color: #FCC304;
+      }
+
+      .clients__item__position {
+        color: #FCC304;
+      }
+    }
+
+    &:nth-child(3) {
+      .clients__oval__block {
+        background-color: #F25656;
+      }
+
+      .clients__item__position {
+        color: #F25656;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-35px);
+    }
+
+    &__text {
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14.4px;
+      line-height: 1.5;
+      text-align: center;
+      margin-top: 6px;
+    }
+
+    &__dash {
+      width: 64px;
+      height: 2px;
+      border: none;
+      margin: 31px;
+
+      &_blue {
+        background-color: #56ccf2;
+      }
+
+      &_yellow {
+        background-color: #FCC304;
+      }
+
+      &_red {
+        background-color: #F25656;
+      }
+    }
+
+    &__name {
+      color: #152032;
+      font-weight: bold;
+      font-size: 12.6px;
+      line-height: 150%;
+    }
+
+    &__position {
+      font-weight: 800;
+      font-size: 12.6px;
+      line-height: 1.0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__oval {
+    position: relative;
+    height: 196px;
+    width: 126px;
+
+    &__photo {
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+      z-index: 2;
+      height: 124px;
+      width: 64px;
+      overflow: hidden;
+      border-radius: 500px;
+      transform-origin: center;
+      transform: rotate(-25deg);
+    }
+
+    &__img {
+      transform-origin: center;
+      transform: rotate(25deg) scale(-1, 1);
+      height: 120%;
+      position: absolute;
+      top: -10px;
+      left: -25px;
+    }
+
+    &__block {
+      height: 162px;
+      width: 64px;
+      border-radius: 500px;
+      transform: rotate(25deg);
+      position: absolute;
+      bottom: 25px;
+      right: 30px;
+    }
+  }
+
+
+}

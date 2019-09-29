@@ -1,0 +1,58 @@
+.gallery {
+  width: max-content;
+
+  &__img {
+    object-fit: fill;
+    max-width: 900px;
+    width: 70vw;
+    height: 540px;
+    position: relative;
+  }
+
+  &__title {
+    position: absolute;
+    left: 98px;
+    bottom: 144px;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: $b;
+  }
+
+  &__text {
+    position: absolute;
+    left: 98px;
+    bottom: 86px;
+    width: 264px;
+    color: $w;
+    font-weight: 900;
+    font-size: 19.6px;
+    line-height: 1.4;
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    width: 81px;
+    height: 64px;
+    z-index: 3;
+    background-color: #fcc304;
+  }
+
+  &__button__left {
+    left: -81px;
+    border-radius: 64px 0 0 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/src/images/arrow-left.svg");
+  }
+
+  &__button__right {
+    left: 0;
+    border-radius: 0 64px 64px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/src/images/arrow-right.svg");
+  }
+}

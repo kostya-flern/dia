@@ -1,0 +1,43 @@
+.info {
+  padding-left: 50px;
+
+  &__heading {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1.5;
+    color: $w;
+    margin: 76px 0 22px;
+  }
+
+  &__text {
+    color: $w;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  &__button {
+    box-sizing: border-box;
+    color: #60779e;
+    background-color: $w;
+    margin-top: 42px;
+    padding: 16px 65px;
+    border-radius: 64px;
+    border: 1px solid;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 1px;
+
+    &:hover {
+      border: 1px solid #ffffff;
+      background-color: #56CCF2;
+      color: $w;
+    }
+
+    &:active {
+      transform: translateY(-10px);
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.features {
+  background-image: url("/src/images/Bg-features.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 976px;
+  position: relative;
+  z-index: -1;
+  margin-top: -130px;
+
+  &__container {
+    padding: 140px 0 0 140px;
+    width: 362px;
+
+    &__heading {
+      color: #FFFFFF;
+  
+      &::before {
+        background-image: url("/src/images/Vector-light.svg") ;
+      }
+    }
+
+    &__title {
+      margin: 10px 0 69px 0;
+      color: #253757;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 1.4;
+    }
+
+    &__item {
+      display: flex;
+      margin-bottom: 64px;
+
+      &_text {
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        padding-left: 32px;
+      }
+    }
+  }
+}

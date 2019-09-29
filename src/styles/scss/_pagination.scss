@@ -1,0 +1,38 @@
+.pagination {
+  width: 70%;
+  margin-top: 48px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:last-child {
+      margin-left: 135px;
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      height: 4px;
+      width: 0;
+      border-radius: 25%;
+      margin-top: 5px;
+      background-color: $color-hover;
+    }
+
+    &:hover::after {
+      width: 100%;
+      transition: width 0.5s;
+    }
+  }
+
+  &__link {
+    color: $w;
+  }
+}

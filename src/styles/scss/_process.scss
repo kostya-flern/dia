@@ -1,0 +1,135 @@
+.process {
+  //position: relative;
+  //top: 160px;
+  margin-top: 160px;
+  display: flex;
+  justify-content: space-between;
+
+  &__info {
+    width: 30%;
+    //height: 365px;
+    padding-bottom: 92px;
+
+    &__title {
+      margin-top: 21px;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 1.4;
+      color: #253757;
+    }
+
+    &__text {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #334563;
+      margin-top: 64px;
+    }
+  }
+
+  &__cardList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+
+    &__item {
+      box-sizing: border-box;
+      position: relative;
+      width: 45%;
+      max-width: 250px;
+      margin-bottom: 128px;
+      padding: 48px 36px;
+      text-align: center;
+      font-size: 12.6px;
+      background-color: #fff;
+      box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.1);
+      transition: 1s;
+
+      &:hover {
+        box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.5);
+        transform: translateY(-10px) scale(1.1);
+      }
+
+      &_text {
+        font-weight: 300;
+        font-size: 12.6px;
+        line-height: 1.5;
+        text-align: center;
+        color: #253757;
+      }
+
+      &:nth-child(odd) {
+        top: 128px;
+      }
+
+      &:nth-child(even) {
+        top: 44px;
+      }
+
+      &:nth-child(1) {
+        .process__cardList__item_num {
+          color: #56ccf2;
+
+          &::before {
+            background-color: #56ccf2;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        .process__cardList__item_num {
+          color: #fcc304;
+
+          &::before {
+            background-color: #fcc304;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        .process__cardList__item_num {
+          color: #f46366;
+
+          &::before {
+            background-color: #f46366;
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        .process__cardList__item_num {
+          color: #26da5c;
+
+          &::before {
+            background-color: #26da5c;
+          }
+        }
+      }
+
+      &_num {
+        width: 48px;
+        margin: auto;
+        text-align: center;
+        padding-top: 15px;
+        position: relative;
+        font-size: 40px;
+        font-weight: 900;
+        z-index: 2;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 48px;
+          height: 48px;
+          border-radius: 48px;
+          z-index: -1;
+          opacity: 0.2;
+        }
+      }
+    }
+  }
+}
