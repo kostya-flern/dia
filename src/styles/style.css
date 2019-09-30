@@ -178,14 +178,14 @@ button {
   border-radius: 64px 0 0 64px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("src/images/arrow-left.svg");
+  background-image: url("../images/arrow-left.svg");
 }
 .gallery__button__right {
   left: 0;
   border-radius: 0 64px 64px 0;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("src/images/arrow-right.svg");
+  background-image: url("../images/arrow-right.svg");
 }
 
 .socials {
@@ -356,7 +356,7 @@ button {
   width: 21px;
   height: 21px;
   left: -32px;
-  background-image: url("src/images/Vector-heading.png");
+  background-image: url("../images/Vector-heading.png");
 }
 
 .services {
@@ -508,7 +508,7 @@ button {
 }
 
 .features {
-  background-image: url("src/images/Bg-features.png");
+  background-image: url("../images/Bg-features.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -525,7 +525,7 @@ button {
   color: #FFFFFF;
 }
 .features__container__heading::before {
-  background-image: url("src/images/Vector-light.svg");
+  background-image: url("../images/Vector-light.svg");
 }
 .features__container__title {
   margin: 10px 0 69px 0;

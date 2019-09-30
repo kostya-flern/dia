@@ -1,5 +1,5 @@
 .features {
-  background-image: url("src/images/Bg-features.png");
+  background-image: url("../images/Bg-features.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -16,7 +16,7 @@
       color: #FFFFFF;
   
       &::before {
-        background-image: url("src/images/Vector-light.svg") ;
+        background-image: url("../images/Vector-light.svg") ;
       }
     }
 

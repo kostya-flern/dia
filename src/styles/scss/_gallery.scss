@@ -45,7 +45,7 @@
     border-radius: 64px 0 0 64px;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("src/images/arrow-left.svg");
+    background-image: url("../images/arrow-left.svg");
   }
 
   &__button__right {
@@ -53,6 +53,6 @@
     border-radius: 0 64px 64px 0;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("src/images/arrow-right.svg");
+    background-image: url("../images/arrow-right.svg");
   }
 }
