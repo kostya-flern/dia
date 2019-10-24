@@ -135,57 +135,51 @@ button {
   transform: translateY(-10px);
 }
 
-.gallery {
-  width: max-content;
-}
-.gallery__img {
-  object-fit: fill;
+.gallery__carousel {
   max-width: 900px;
   width: 70vw;
   height: 540px;
+  margin: auto;
+}
+
+.carousel {
   position: relative;
 }
-.gallery__title {
-  position: absolute;
-  left: 98px;
-  bottom: 144px;
-  font-weight: 800;
-  font-size: 12.6px;
-  line-height: 1.5;
-  text-transform: uppercase;
-  color: #56ccf2;
-}
-.gallery__text {
-  position: absolute;
-  left: 98px;
-  bottom: 86px;
-  width: 264px;
-  color: #E5E5E5;
-  font-weight: 900;
-  font-size: 19.6px;
-  line-height: 1.4;
-}
-.gallery__button {
+.carousel__btn {
   position: absolute;
   top: 50%;
   width: 81px;
   height: 64px;
   z-index: 3;
   background-color: #fcc304;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
-.gallery__button__left {
+.carousel__btn_prev {
   left: -81px;
   border-radius: 64px 0 0 64px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-image: url("../images/arrow-left.svg");
 }
-.gallery__button__right {
+.carousel__btn_next {
   left: 0;
   border-radius: 0 64px 64px 0;
-  background-repeat: no-repeat;
-  background-position: center;
   background-image: url("../images/arrow-right.svg");
+}
+.carousel__list {
+  overflow: hidden;
+}
+.carousel__container {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  transition: margin-left 1s ease;
+}
+.carousel__item__img {
+  object-fit: fill;
+  max-width: 900px;
+  width: 70vw;
+  height: 540px;
 }
 
 .socials {
@@ -198,6 +192,9 @@ button {
 .socials__item {
   list-style: none;
   margin: 0 40px;
+}
+.socials__item:nth-child(2) .socials__icon {
+  margin: 40px 0;
 }
 .socials__item:hover {
   color: #fff;

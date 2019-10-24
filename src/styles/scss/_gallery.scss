@@ -1,58 +1,80 @@
 .gallery {
-  width: max-content;
-
-  &__img {
-    object-fit: fill;
+  &__carousel {
     max-width: 900px;
     width: 70vw;
     height: 540px;
-    position: relative;
+    margin: auto;
   }
+}
 
-  &__title {
-    position: absolute;
-    left: 98px;
-    bottom: 144px;
-    font-weight: 800;
-    font-size: 12.6px;
-    line-height: 1.5;
-    text-transform: uppercase;
-    color: $b;
-  }
+.carousel {
+  position: relative;
 
-  &__text {
-    position: absolute;
-    left: 98px;
-    bottom: 86px;
-    width: 264px;
-    color: $w;
-    font-weight: 900;
-    font-size: 19.6px;
-    line-height: 1.4;
-  }
-
-  &__button {
+  &__btn {
     position: absolute;
     top: 50%;
     width: 81px;
     height: 64px;
     z-index: 3;
     background-color: #fcc304;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
   }
 
-  &__button__left {
+  &__btn_prev {
     left: -81px;
     border-radius: 64px 0 0 64px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../images/arrow-left.svg");
+    background-image: url('../images/arrow-left.svg');
   }
 
-  &__button__right {
+  &__btn_next {
     left: 0;
     border-radius: 0 64px 64px 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../images/arrow-right.svg");
+    background-image: url('../images/arrow-right.svg');
+  }
+
+  &__list {
+    overflow: hidden;
+  }
+
+  &__container {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    transition: margin-left 1s ease;
+  }
+
+  &__item {
+
+    &__img {
+      object-fit: fill;
+      max-width: 900px;
+      width: 70vw;
+      height: 540px;
+      // position: relative;
+    }
+
+    // &__title {
+    //   position: absolute;
+    //   left: 98px;
+    //   bottom: 144px;
+    //   font-weight: 800;
+    //   font-size: 12.6px;
+    //   line-height: 1.5;
+    //   text-transform: uppercase;
+    //   color: #56ccf2;
+    // }
+
+    // &__text {
+    //   position: absolute;
+    //   left: 98px;
+    //   bottom: 86px;
+    //   width: 264px;
+    //   color: #E5E5E5;
+    //   font-weight: 900;
+    //   font-size: 19.6px;
+    //   line-height: 1.4;
+    // }
   }
 }

@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
     integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <script src="src/scripts/main.js" defer></script>
   <title>Dia</title>
 </head>
 
@@ -66,33 +67,62 @@
       </button>
     </div>
     <div class="gallery header__gallery">
-      <div class="gallery__list">
-        <div class="gallery__item">
-          <img class="gallery__img" src="src/images/image1.jpg" alt="Image">
-          <p class="gallery__title">
-            Intro
-          </p>
-          <p class="gallery__text">
-            By the same illusion which lifts the horizon.
-          </p>
+      <div class="gallery__carousel carousel">
+        <div class="carousel__btn carousel__btn_prev"></div>
+        <div class="carousel__btn carousel__btn_next"></div>
+        <div class="carousel__list">
+          <ul class="carousel__container">
+            <li class="carousel__item">
+              <div class="carousel__item__inner">
+                <img class="carousel__item__img"
+                  src="https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg" />
+                <!-- <p class="carousel__item__title">
+                  Intro
+                </p>
+                <p class="carousel__item__text">
+                  By the same illusion which lifts the horizon.
+                </p> -->
+              </div>
+            </li>
+            <li class="carousel__item">
+              <div class="carousel__item__inner">
+                <img class="carousel__item__img"
+                  src="https://farm6.staticflickr.com/5812/23394215774_b76cd33a87_h_d.jpg" />
+                <!-- <p class="carousel__item__title">
+                  Intro
+                </p>
+                <p class="carousel__item__text">
+                  By the same illusion which lifts the horizon. #2
+                </p> -->
+              </div>
+            </li>
+            <li class="carousel__item">
+              <div class="carousel__item__inner">
+                <img class="carousel__item__img"
+                  src="https://farm8.staticflickr.com/7455/27879053992_ef3f41c4a0_h_d.jpg" />
+                <!-- <p class="carousel__item__title">
+                  Intro
+                </p>
+                <p class="carousel__item__text">
+                  By the same illusion which lifts the horizon. #3
+                </p> -->
+              </div>
+            </li>
+            <li class="carousel__item">
+              <div class="carousel__item__inner">
+                <img class="carousel__item__img"
+                  src="https://farm8.staticflickr.com/7367/27980898905_72d106e501_h_d.jpg" />
+                <!-- <p class="carousel__item__title">
+                  Intro
+                </p>
+                <p class="carousel__item__text">
+                  By the same illusion which lifts the horizon. #4
+                </p> -->
+              </div>
+            </li>
+          </ul>
         </div>
-        <button class="gallery__button gallery__button__left"></button>
-        <button class="gallery__button gallery__button__right"></button>
       </div>
-    </div>
-    <div class="header__socials">
-      <ul class="socials">
-        <li class="socials__item">
-          <a class="socials__icon" href="#"><i class="fab fa-facebook-f"></i></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__icon" href="#"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__icon" href="#"><i class="fab fa-instagram"></i></a>
-        </li>
-      </ul>
-    </div>
   </header>
   <main class="main">
     <section class="intro">
